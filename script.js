@@ -1,3 +1,4 @@
+// Datos de las conexiones (basados en el catálogo de Grupo Tinsa)
 const conexiones = [
     "Codo 45°", "Codo 90°", "Codo reducido", "Niple",
     "Cople", "Reducciones", "Stub end", "Tapones",
@@ -5,12 +6,13 @@ const conexiones = [
     "Nipolet", "Sockolet", "Threadolet", "Weldolet",
     "Latrolet", "Elbolet", "Sweepolet"
 ];
-b
+
 const bridas = [
     "Brida socket", "Brida socket weld", "Brida deslizable",
     "Brida lap joint", "Brida ciega"
 ];
 
+// Función para renderizar una lista en un grid
 function renderizarItems(elementId, items, icono = 'fa-plug') {
     const grid = document.getElementById(elementId);
     if (!grid) return;
@@ -23,10 +25,13 @@ function renderizarItems(elementId, items, icono = 'fa-plug') {
     `).join('');
 }
 
+// Renderizar conexiones (usamos un ícono genérico de engranaje/pipe)
 renderizarItems('gridConexiones', conexiones, 'fa-pipe');
 
+// Renderizar bridas (ícono de engranaje o brida)
 renderizarItems('gridBridas', bridas, 'fa-cog');
 
+// (Opcional) Pequeña mejora: si el usuario hace clic en un item, muestra alerta informativa
 document.addEventListener('click', function(e) {
     const item = e.target.closest('.item-catalogo, .item-brida');
     if (item) {
