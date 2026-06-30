@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Productos industriales: Válvulas, Bridas, Tubería, Conexiones, Instrumentación e Intercambiadores de calor." />
+    <title>Productos | Soluciones Industriales Magaña</title>
+    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/productos.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-oil-can"></i>
+                    <span>MAGAÑA</span>
+                    <small>Soluciones Industriales</small>
+                </a>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html" class="active">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contacto.html" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header" style="background-image: linear-gradient(rgba(5,20,30,0.8), rgba(5,20,30,0.9)), url('images/3.png');">
+        <div class="container">
+            <h1 data-aos="fade-up">Nuestros Productos</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Equipos y componentes de la más alta calidad para la industria.</p>
+        </div>
+    </section>
+
+    <section class="filtros">
+        <div class="container">
+            <div class="filtros-buttons" data-aos="fade-up">
+                <button class="filtro-btn active" data-filter="all">Todos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos-completos">
+        <div class="container">
+            <div class="productos-grid" id="productosGrid">
+                <div class="producto-card" data-category="valvulas" data-aos="flip-up" data-aos-delay="0">
+                    <div class="producto-image" style="background-image: url('images/3.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Calidad</span>
+                            <button class="btn-quick-view" data-product="Válvulas Industriales">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Válvulas Industriales</h3>
+                        <p>Válvulas de compuerta, globo, check, bola y mariposa.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> 150-2500 lbs</span>
+                            <span><i class="fas fa-cog"></i> Acero/Inox</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="producto-card" data-category="bridas" data-aos="flip-up" data-aos-delay="100">
+                    <div class="producto-image" style="background-image: url('images/9.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Alta Presión</span>
+                            <button class="btn-quick-view" data-product="Bridas RTJ">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Bridas RTJ</h3>
+                        <p>Bridas tipo RTJ para alta presión, 150-2500 lbs.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> 150-2500 lbs</span>
+                            <span><i class="fas fa-cog"></i> RTJ / WN / SO</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="tuberia" data-aos="flip-up" data-aos-delay="200">
+                    <div class="producto-image" style="background-image: url('images/10.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Industrial</span>
+                            <button class="btn-quick-view" data-product="Tubería Industrial">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Tubería Industrial</h3>
+                        <p>Tubería en acero al carbón, inoxidable y aleaciones especiales.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> ½" - 24"</span>
+                            <span><i class="fas fa-cog"></i> Céd. 40 / 80</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="producto-card" data-category="conexiones" data-aos="flip-up" data-aos-delay="300">
+                    <div class="producto-image" style="background-image: url('images/4.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Variedad</span>
+                            <button class="btn-quick-view" data-product="Conexiones Industriales">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Conexiones Industriales</h3>
+                        <p>Codos, tes, reducciones, coples, niples y más.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> ½" - 24"</span>
+                            <span><i class="fas fa-cog"></i> Roscado / Soldable</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="producto-card" data-category="intercambiadores" data-aos="flip-up" data-aos-delay="400">
+                    <div class="producto-image" style="background-image: url('images/6.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Eficiencia</span>
+                            <button class="btn-quick-view" data-product="Intercambiadores de Calor">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Intercambiadores de Calor</h3>
+                        <p>Equipos de transferencia de calor para procesos industriales.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> A la medida</span>
+                            <span><i class="fas fa-cog"></i> Alta eficiencia</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="producto-card" data-category="especiales" data-aos="flip-up" data-aos-delay="500">
+                    <div class="producto-image" style="background-image: url('images/8.png');">
+                        <div class="producto-overlay">
+                            <span class="producto-tag">Especial</span>
+                            <button class="btn-quick-view" data-product="Equipos Especiales">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Equipos Especiales</h3>
+                        <p>Fabricación de equipos especiales a la medida de tu proyecto.</p>
+                        <div class="producto-specs">
+                            <span><i class="fas fa-tag"></i> Personalizado</span>
+                            <span><i class="fas fa-cog"></i> Ingeniería</span>
+                        </div>
+                        <a href="contacto.html" class="btn-producto">Cotizar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <i class="fas fa-oil-can"></i>
+                <span>MAGAÑA</span>
+                <small>Soluciones Industriales</small>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Soluciones Industriales y Petroleras Magaña. Todos los derechos reservados.</p>
+                <p>Compras mayoritarias para la industria.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>

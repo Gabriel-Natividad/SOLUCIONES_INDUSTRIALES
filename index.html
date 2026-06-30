@@ -2,132 +2,254 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Soluciones Ind. y Petroleras Magaña</title>
-    <!-- Enlace al CSS externo -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soluciones Industriales y Petroleras Magaña - Más de 15 años suministrando equipos, conexiones, válvulas y soluciones industriales para la industria petrolera, energética y manufacturera." />
+    <meta name="keywords" content="válvulas industriales, bridas, tubería, conexiones, intercambiadores, fabricación, maquinado" />
+    <title>Inicio | Soluciones Industriales Magaña</title>
+    
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Encabezado principal -->
-    <header>
+
+    <header class="header" id="header">
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-oil-can"></i>
-                <h1>Soluciones Ind. <span>&</span> Petroleras Magaña</h1>
+                <a href="index.html">
+                    <i class="fas fa-oil-can"></i>
+                    <span>MAGAÑA</span>
+                    <small>Soluciones Industriales</small>
+                </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#catalogo">Catálogo</a></li>
-                    <li><a href="#bridas">Bridas</a></li>
-                    <li><a href="#ventajas">Ventajas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            
+            <nav class="nav" id="nav">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <a href="https://wa.me/5211234567890" class="btn-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> Cotizar
-            </a>
+            
+            <div class="header-actions">
+                <a href="contacto.html" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Cotizar
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Sección Hero -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h2>Venta de Conexiones Industriales <br>para compras <span>mayoritarias</span></h2>
-            <p>Encuentra todas las conexiones que tu proyecto necesita, con disponibilidad inmediata, materiales certificados y precios competitivos. <strong>Si buscas seguridad, durabilidad y un proveedor que sí responde, estás en el lugar correcto.</strong></p>
+    <section class="hero-inicio" style="background-image: linear-gradient(rgba(5,20,30,0.80), rgba(5,20,30,0.88)), url('images/2.png');">
+        <div class="container hero-inicio-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badge">Soluciones Industriales</div>
+            <h1>MAGAÑA</h1>
+            <h2>y Petroleras Magaña</h2>
+            <p class="hero-subtitle">Oil & Gas • Energía • Manufactura</p>
+            <p class="hero-description">
+                Más de 15 años ofreciendo soluciones para la industria petrolera y energética.
+                Suministro de equipos, conexiones, válvulas y soluciones industriales para compras mayoritarias.
+            </p>
+            <div class="hero-buttons">
+                <a href="productos.html" class="btn-primary">Ver Catálogo <i class="fas fa-arrow-right"></i></a>
+                <a href="contacto.html" class="btn-secondary"><i class="fab fa-whatsapp"></i> Cotizar</a>
+            </div>
             <div class="hero-badges">
                 <span><i class="fas fa-check-circle"></i> Stock inmediato</span>
                 <span><i class="fas fa-check-circle"></i> Material certificado</span>
-                <span><i class="fas fa-check-circle"></i> Envíos el mismo día</span>
-            </div>
-            <a href="#catalogo" class="btn-primary">Ver catálogo completo</a>
-        </div>
-    </section>
-
-    <!-- Sección Catálogo de Conexiones -->
-    <section id="catalogo" class="catalogo">
-        <div class="container">
-            <h2>Catálogo de Conexiones</h2>
-            <p class="subtitle">Fabricadas en negro roscado, galvanizado, soldable, cédula 40 y 80, PVC, roscado y para cementar, además de opciones para alta presión y Socket Weld. <br> Medidas desde ½” hasta 24” (según tipo).</p>
-            <div class="grid-catalogo" id="gridConexiones">
-                <!-- Los elementos se inyectarán desde JavaScript -->
+                <span><i class="fas fa-check-circle"></i> Envíos mismo día</span>
             </div>
         </div>
     </section>
 
-    <!-- Sección Bridas -->
-    <section id="bridas" class="bridas">
+    <section class="servicios-home">
         <div class="container">
-            <h2>Bridas para cualquier exigencia</h2>
-            <p class="subtitle">Desde 150 lb hasta 1500 lb. Máxima resistencia y durabilidad.</p>
-            <div class="grid-bridas" id="gridBridas">
-                <!-- Los elementos se inyectarán desde JavaScript -->
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2>Soluciones Integrales para la Industria</h2>
+                <p>Ofrecemos servicios especializados con la más alta calidad y experiencia en el sector industrial.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección Ventajas -->
-    <section id="ventajas" class="ventajas">
-        <div class="container">
-            <h2>¿Por qué elegir a <span>Soluciones Magaña</span>?</h2>
-            <div class="grid-ventajas">
-                <div class="ventaja-item">
-                    <i class="fas fa-boxes"></i>
-                    <h3>Stock inmediato</h3>
-                    <p>Evita retrasos con nuestra disponibilidad constante en todas las categorías.</p>
+            
+            <div class="servicios-grid-home">
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="servicio-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Fabricación Especial</h3>
+                    <p>Fabricación de equipos y componentes industriales a la medida de tus necesidades.</p>
+                    <a href="servicios.html#fabricacion" class="btn-servicio">Conocer más →</a>
                 </div>
-                <div class="ventaja-item">
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="servicio-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Válvulas Industriales</h3>
+                    <p>Suministro y mantenimiento de válvulas para todo tipo de procesos industriales.</p>
+                    <a href="servicios.html#valvulas" class="btn-servicio">Conocer más →</a>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="servicio-icon"><i class="fas fa-pipe"></i></div>
+                    <h3>Tubería Industrial</h3>
+                    <p>Suministro de tubería industrial en todos los materiales y medidas.</p>
+                    <a href="servicios.html#tuberia" class="btn-servicio">Conocer más →</a>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="servicio-icon"><i class="fas fa-circle-notch"></i></div>
+                    <h3>Bridas y Conexiones</h3>
+                    <p>Todo tipo de bridas, conexiones y accesorios para sistemas de tubería.</p>
+                    <a href="servicios.html#bridas" class="btn-servicio">Conocer más →</a>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="servicio-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Intercambiadores de Calor</h3>
+                    <p>Diseño, fabricación y mantenimiento de intercambiadores de calor.</p>
+                    <a href="servicios.html#intercambiadores" class="btn-servicio">Conocer más →</a>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="servicio-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Sistemas Contra Incendio</h3>
+                    <p>Diseño e instalación de sistemas contra incendio para la industria.</p>
+                    <a href="servicios.html#incendio" class="btn-servicio">Conocer más →</a>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="servicios.html" class="btn-primary">Ver todos los servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-section" style="background-image: linear-gradient(rgba(5,20,30,0.85), rgba(5,20,30,0.92)), url('../images/hero/2.png');">
+        <div class="container parallax-content">
+            <div class="parallax-text" data-aos="fade-right" data-aos-duration="800">
+                <span class="parallax-badge">+15 Años de Experiencia</span>
+                <h2>Servicios Industriales <br />Integrales</h2>
+                <p>Fabricación • Suministro • Mantenimiento • Servicios Industriales</p>
+            </div>
+            <div class="parallax-stats" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Clientes atendidos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-label">Proyectos realizados</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ventajas">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">¿Por qué elegirnos?</span>
+                <h2>Nuestros Compromisos</h2>
+                <p>Más de 15 años de experiencia nos respaldan y nos distinguen en el sector.</p>
+            </div>
+            
+            <div class="ventajas-grid">
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Más de 15 años</h3>
+                    <p>De experiencia en el sector industrial y petrolero.</p>
+                </div>
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-certificate"></i>
                     <h3>Material certificado</h3>
-                    <p>Cumplimos con las normas industriales más estrictas para tu tranquilidad.</p>
+                    <p>Productos con certificación de calidad y normas internacionales.</p>
                 </div>
-                <div class="ventaja-item">
-                    <i class="fas fa-headset"></i>
-                    <h3>Atención rápida</h3>
-                    <p>Resolvemos tus dudas y cotizaciones por WhatsApp en minutos.</p>
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Cobertura nacional</h3>
+                    <p>Atendemos a clientes en todo el territorio nacional.</p>
                 </div>
-                <div class="ventaja-item">
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-truck"></i>
-                    <h3>Precios competitivos</h3>
-                    <p>Entregas a todo México con la mejor relación calidad-precio.</p>
+                    <h3>Entrega inmediata</h3>
+                    <p>Stock disponible para entregas rápidas y eficientes.</p>
+                </div>
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-user-cog"></i>
+                    <h3>Personal especializado</h3>
+                    <p>Equipo de profesionales con amplia experiencia técnica.</p>
+                </div>
+                <div class="ventaja-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-headset"></i>
+                    <h3>Atención </h3>
+                    <p>Soporte y atención personalizada.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto / Cotización -->
-    <section id="contacto" class="contacto">
-        <div class="container contacto-content">
-            <div class="contacto-texto">
-                <h2>Tu proyecto no puede parar. <br>Tus conexiones tampoco.</h2>
-                <p>Cotiza por WhatsApp y recibe atención inmediata. <br>Atendemos industria, construcción y líneas de proceso con materiales de alto desempeño.</p>
-                <a href="https://wa.me/5211234567890" class="btn-whatsapp-large" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Cotizar ahora
-                </a>
+    <section class="industrias">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Industrias</span>
+                <h2>Confían en nosotros</h2>
+                <p>Atendemos a los sectores más exigentes de la industria.</p>
             </div>
-            <div class="contacto-widget">
-                <div class="widget-card">
-                    <h4><i class="fas fa-store"></i> Ventas Guadalajara</h4>
-                    <p><i class="fas fa-phone"></i> +52 33 1234 5678</p>
+            
+            <div class="industrias-grid">
+                <div class="industria-item" data-aos="flip-left" data-aos-delay="0">
+                    <i class="fas fa-oil-well"></i>
+                    <span>Petrolera</span>
                 </div>
-                <div class="widget-card">
-                    <h4><i class="fas fa-store"></i> Ventas Monterrey</h4>
-                    <p><i class="fas fa-phone"></i> +52 81 8765 4321</p>
+                <div class="industria-item" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-bolt"></i>
+                    <span>Energía</span>
+                </div>
+                <div class="industria-item" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Salud</span>
+                </div>
+                <div class="industria-item" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-utensils"></i>
+                    <span>Alimenticia</span>
+                </div>
+                <div class="industria-item" data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-building"></i>
+                    <span>Construcción</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 Soluciones Ind. y Petroleras Magaña. Todos los derechos reservados.</p>
-            <p class="footer-legal">Materiales certificados · Entrega inmediata · Precios mayoristas</p>
+            <div class="footer-brand">
+                <i class="fas fa-oil-can"></i>
+                <span>MAGAÑA</span>
+                <small>Soluciones Industriales</small>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Soluciones Industriales y Petroleras Magaña. Todos los derechos reservados.</p>
+                <p>Compras mayoritarias para la industria.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Enlace al JavaScript externo -->
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galería de proyectos industriales - Soluciones Industriales y Petroleras Magaña." />
+    <title>Galería | Soluciones Industriales Magaña</title>
+    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-oil-can"></i>
+                    <span>MAGAÑA</span>
+                    <small>Soluciones Industriales</small>
+                </a>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html" class="active">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contacto.html" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header" style="background-image: linear-gradient(rgba(5,20,30,0.8), rgba(5,20,30,0.9)), url('images/2.png');">
+        <div class="container">
+            <h1 data-aos="fade-up">Nuestra Galería</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Proyectos realizados con calidad y excelencia.</p>
+        </div>
+    </section>
+
+    <section class="galeria-completa">
+        <div class="galeria-masonry" id="galeriaMasonry">
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="0">
+                <img src="images/4.png" alt="Proyecto industrial 1" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/5.png" alt="Proyecto industrial 2" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/8.png" alt="Proyecto industrial 3" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/9.png" alt="Proyecto industrial 4" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/10.png" alt="Proyecto industrial 5" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/1.png" alt="Proyecto industrial 6" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="600">
+                <img src="images/2.png" alt="Proyecto industrial 7" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+            <div class="galeria-item" data-aos="zoom-in" data-aos-delay="700">
+                <img src="images/7.png" alt="Proyecto industrial 8" loading="lazy" />
+                <div class="galeria-overlay">
+                    <i class="fas fa-expand"></i>
+                    <span>Ver proyecto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <img src="" alt="Proyecto ampliado" id="lightboxImage" />
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <i class="fas fa-oil-can"></i>
+                <span>MAGAÑA</span>
+                <small>Soluciones Industriales</small>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Soluciones Industriales y Petroleras Magaña. Todos los derechos reservados.</p>
+                <p>Compras mayoritarias para la industria.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+</html>
