@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             const productName = this.getAttribute('data-product');
-            alert(`📦 ${productName}\n\nPara más información, contáctanos por WhatsApp o llena el formulario de contacto.\n\n📞 +52 81 1234 5678`);
+            alert(`📦 ${productName}\n\nPara más información, contáctanos por WhatsApp o llena el formulario de contacto.\n\n📞 +52 993 265 6845`);
         });
     });
 
